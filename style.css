@@ -1,3 +1,153 @@
 body{
     margin: 0;
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 48px 0px 48px;
+}
+
+header {
+    width: 100%;
+    background-color: none;
+    padding: 10px 0;
+    border-radius: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* left alligned section for navigation link */
+.nav-left {
+    display: flex;
+    gap: 20px;
+}
+
+/* menu items */
+.nav-item {
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-item:hover {
+    color: purple;
+}
+
+/* center aligned logo */
+.brand {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* styling for the logo */
+.logo {
+    font-size: 25px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.logo:hover {
+    color: darkorchid;
+    font-size: 30px;
+}
+
+/* right alingned section for link */
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* styling for contact */
+
+.contact-link {
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+    text-decoration: none;
+}
+.contact-link:hover {
+    color: purple;
+}
+
+/* styling for the main heading  */
+.heading {
+    font-size: 120px;
+    font-family: 'BIZ UDPMincho';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* container for the image  */
+
+.main-image {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 22px;
+}
+
+/* style for the image */
+.image-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* image contaner box */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* style for each image item */
+.image-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* each image styling */
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* image name and subtitle styling */
+.project-name, .project-subtitle {
+    display: block;
+    margin-top: 2px;
+    text-align: left;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+/* only .project-name styling */
+.project-name {
+    font-size: 20px;
+    font-weight: regular;
+    color: rgba(0, 0, 0, 1);
+}
+ 
+/* only .project-subtitle styling */
+.project-subtitle {
+    font-size: 16px;
+    font-weight: regular;
+    color: ;
 }
