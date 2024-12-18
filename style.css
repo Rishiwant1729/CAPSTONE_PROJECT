@@ -76,6 +76,16 @@ header {
     color: purple;
 }
 
+/* entire heading container styling */
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
 /* styling for the main heading  */
 .heading {
     font-size: 120px;
@@ -149,5 +159,6 @@ header {
 .project-subtitle {
     font-size: 16px;
     font-weight: regular;
-    color: ;
+    color: rgba(0, 0, 0, 0.8);
+    /* padding-left: 16px; */
 }
