@@ -47,21 +47,29 @@ body {
       justify-content: space-between;
       line-height: 0;
       margin-right: 50px;
-      font-family: Gothic A1      ;
+      /* font-family: Gothic A1; */
   
     }
     
     .navbar a {
       margin-right: 20px;
-      color: black;
       text-decoration: none;
-      font-family: Gothic A1;
+    }
+    .navbar a h1 {
+        font-size: 17px;
+        font-weight: 400px;
+        font-family: Gothic A1;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 1);
     }
     
     .navbar .logo h1 {
-      font-weight: normal;
+      font-weight: regular;
       font-size: 42px;
-      margin: 0;
+      font-family: Abyssinica SIL;
+      line-height: 42px;
+      letter-spacing: -4%;
+      color: rgba(0, 0, 0, 0.835);
       
     }
 
@@ -83,11 +91,6 @@ body {
     
   /* for the main conteint */
   
-  .main {
-    /* background-color: rgb(255, 255, 0); */
-    margin: 0px;
-    width: 100vw;
-  }
   .landing-page {
     display: flex;
     width: 100%;
@@ -95,15 +98,20 @@ body {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .heading {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
   .landing-page h1 {
     text-align: center;
-    font-size: 110px;
+    font-size: 120px;
     width: 100%;
-    height: auto;
-    font-weight:lighter;
+    height: 100px;
+    font-weight: lighter;
     letter-spacing: -2%;
     margin: 10px;
-    font-family: BIZ UDPGothic;
+    font-family: BIZ UDPMincho;
+    color: rgba(0, 0, 0, 1);
   
   }
   .landing-page img {
@@ -143,8 +151,6 @@ body {
   }
   
   .text-content {
-    margin: 0;
-    padding: 0;
     line-height: 0.3;
     font-family: Gothic A1;
   }
@@ -240,7 +246,9 @@ margin-top: 10px;
     width: 60%;
     font-size: 48px;
     text-align: center;
-    font-family: BIZ UDPMincho    ;
+    font-family: BIZ UDPMincho;
+    line-height: 52px;
+    letter-spacing: -1%;
   
   }
   
@@ -259,29 +267,34 @@ margin-top: 10px;
   }
   
   .footer-left p {
-    margin: 0;
+    line-height: 32px;
     font-size: 28px;
-    color: #555;
-    font-family: 'Lexend Exa', sans-serif;
-  
+    font-weight: 400px;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: -1%;
+    font-family: BIZ UDPMincho;
+    height: 32px;
   }
   
   .footer-right .contact-button {
-    padding: 8px 16px;
-    font-size: 14px;
-    font-family: "Arial", sans-serif;
-    color: #000;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Roboto Mono;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400px;
+    height: 42px;
     /* background-color: #fff; */
     /* border: 1px solid #ddd; */
+    border: 1px solid rgba(0, 0, 0, 1);
     border-radius: 22px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Lexend Exa', sans-serif;
   }
   
-  .footer-right .contact-button:hover {
+  .contact-button:hover {
     /* background-color: #f8f8f8; */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.272);
   }
   
   /* media queries for responsive page */
@@ -356,7 +369,14 @@ margin-top: 10px;
 
     .logo{
         margin-left: 8px;
+        font-weight: lighter;
+        font-size: 30px;
     }
+
+    .heading {
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
     
     .collage-img {
       margin: 10px;
