@@ -2,6 +2,7 @@ body {
     background-color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
   
   /* for the navigation bar */
@@ -63,7 +64,23 @@ body {
       margin: 0;
       
     }
-  
+
+    .contact-nav {
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 0;
+        font-family: Gothic A1;
+        /* background-color: aqua; */
+        
+    }
+    .contact-nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
   /* for the main conteint */
   
   .main {
@@ -108,12 +125,21 @@ body {
     /* height: 300px; */
     width: 350px;
     margin: 20px;
+    /* border-radius: 8px; */
+    object-fit: cover;
   }
   
   .collage-img img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: 0.2s linear;
+    
+  }
+
+  .collage-img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0.1px 0.1px 30px rgb(174, 173, 173);
   }
   
   .text-content {
@@ -303,6 +329,9 @@ margin-top: 10px;
   }
   
   @media only screen and (max-width: 480px) {
+    .landing-page img {
+        margin-left: 20px;
+    }
     .navbar{
         height: 80px;
     }
@@ -360,7 +389,7 @@ margin-top: 10px;
 
     .data {
         height: 150px;
-        width: 100px;
+        width: 110px;
         /* background-color: aquamarine; */
         /* margin: 10px; */
         border-top: 1px solid black; 
