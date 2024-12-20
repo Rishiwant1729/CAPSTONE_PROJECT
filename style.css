@@ -1,169 +1,397 @@
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
-
-
-body{
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
     margin: 0;
-    padding: 5px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    padding: 0px 48px 0px 48px;
-}
-
-header {
-    width: 100%;
-    background-color: none;
-    padding: 10px 0;
-    border-radius: none;
-}
-
-.navbar {
+  }
+  
+  /* for the navigation bar */
+  
+  .navbar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    justify-content: center;
+    background-color: #ffffff;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    height: 110px;
+    position: fixed;
+  }
 
-/* left alligned section for navigation link */
-.nav-left {
+  .nav-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px 20px;
+    width: 80%;
+    margin-top: 20px;
+    background-color: rgba(25, 51, 34, 0.129);
+    border-radius: 22px;
+    box-shadow: 1px 1px 50px rgba(121, 115, 115, 0.295);
+
+      
+    }
+    
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Abyssinica SIL;
+      /* background-color: aqua; */
+      width: 200px;
+      margin-left: -100px;
+  
+    }
+    
+    .navbar .page-links {
+      display: flex;
+      justify-content: space-between;
+      line-height: 0;
+      margin-right: 50px;
+      font-family: Gothic A1      ;
+  
+    }
+    
+    .navbar a {
+      margin-right: 20px;
+      color: black;
+      text-decoration: none;
+      font-family: Gothic A1;
+    }
+    
+    .navbar .logo h1 {
+      font-weight: normal;
+      font-size: 42px;
+      margin: 0;
+      
+    }
+  
+  /* for the main conteint */
+  
+  .main {
+    /* background-color: rgb(255, 255, 0); */
+    margin: 0px;
+    width: 100vw;
+  }
+  .landing-page {
     display: flex;
-    gap: 20px;
-}
-
-/* menu items */
-.nav-item {
-    font-size: 18px;
-    color: #444;
-    font-weight: bold;
-    text-decoration: none;
-}
-.nav-item:hover {
-    color: purple;
-}
-
-/* center aligned logo */
-.brand {
-    flex-grow: 1;
+    width: 100%;
+    padding: 100px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .landing-page h1 {
     text-align: center;
-}
-
-/* styling for the logo */
-.logo {
-    font-size: 25px;
-    position: relative;
-    transition: color 0.3s ease;
-}
-.logo:hover {
-    color: darkorchid;
-    font-size: 30px;
-}
-
-/* right alingned section for link */
-
-.contact {
+    font-size: 110px;
+    width: 100%;
+    height: auto;
+    font-weight:lighter;
+    letter-spacing: -2%;
+    margin: 10px;
+    font-family: BIZ UDPGothic;
+  
+  }
+  .landing-page img {
+    width: 90%;
+    height: 70%;
+    border-radius: 8px;
+  }
+  
+  /* for making of the collage */
+  .collage {
     display: flex;
-    justify-content: flex-end;
-}
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: #1f9c34; */
+    gap: 20px;
+  }
+  
+  .collage-img {
+    /* height: 300px; */
+    width: 350px;
+    margin: 20px;
+  }
+  
+  .collage-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-content {
+    margin: 0;
+    padding: 0;
+    line-height: 0.3;
+    font-family: Gothic A1;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    color: #00000099;
+  }
 
-/* styling for contact */
 
-.contact-link {
-    font-size: 18px;
-    color: #444;
-    font-weight: bold;
-    text-decoration: none;
-}
-.contact-link:hover {
-    color: purple;
-}
-
-/* entire heading container styling */
-.heading-container {
+  /* for impact container */
+  .impact-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    /* background-color: bisque; */
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.impact {
+  width: 75%;
+  /* background-color: aqua; */
+}
+.our {
+  font-size: 28px;
+  font-weight: 400px;
+  font-family: BIZ UDPMincho;
+  line-height: 32px;
+  letter-spacing: -1%;
+  
+}
+
+.impact-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    /* background-color: red; */
+}
+.impact-data .data:nth-child(3),
+.impact-data .data:nth-child(4) {
+  margin-top: -50px;
+}
+
+.data {
+  height: 150px;
+  width: 300px;
+  /* background-color: aquamarine; */
+  /* margin: 10px; */
+  border-top: 1px solid black; 
+}
+
+.numbers {
+  display: block;
+  font-size: 48px;
+  font-weight: 400px;
+  font-family: BIZ UDPMincho;
+  line-height: 52px;
+  letter-spacing: -1%;
+  margin-top: 10px;
+}
+.datatitle {
+font-family: Gothic A1;
+font-weight: 400px;
+font-size: 20px;
+line-height: 24px;
+margin-top: 10px;
+}
+
+
+
+ 
+  
+  /* for about section */
+  
+  .about {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 100%;
+    margin: 40px 0;
+    /* background-color: #1f9c34; */
+  }
+  
+  .about p {
+    width: 60%;
+    font-size: 48px;
     text-align: center;
-}
-
-/* styling for the main heading  */
-.heading {
-    font-size: 120px;
-    font-family: 'BIZ UDPMincho';
-    font-weight: 100;
-    margin-bottom: 20px;
-}
-
-/* container for the image  */
-
-.main-image {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    border-top: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 22px;
-}
-
-/* style for the image */
-.image-main {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* image contaner box */
-.image-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
+    font-family: BIZ UDPMincho    ;
+  
+  }
+  
+  
+  
+  /* for the footer part */
+  
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
+    padding: 20px 40px;
+    /* background-color: #d21e1e; */
+    /* border-top: 1px solid #ddd; */
+    font-family: "Arial", sans-serif;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-size: 28px;
+    color: #555;
+    font-family: 'Lexend Exa', sans-serif;
+  
+  }
+  
+  .footer-right .contact-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    color: #000;
+    /* background-color: #fff; */
+    /* border: 1px solid #ddd; */
+    border-radius: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Lexend Exa', sans-serif;
+  }
+  
+  .footer-right .contact-button:hover {
+    /* background-color: #f8f8f8; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* media queries for responsive page */
+  
+  @media only screen and (max-width: 1024px) {
+    .collage-img {
+      width: 300px;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .subtitle {
+      font-size: 15px;
+    }
+  
+    .landing-page h1 {
+      font-size: 12vw;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .collage {
+      justify-content: center;
+    }
+  
+    .collage-img {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contact-column {
+      margin: 8px 0;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .navbar{
+        height: 80px;
+    }
+    .nav-content{
+        height: 10px;
+    }
+    .nav-content h1 {
+      font-size: 16px;
+    }
+  
+    .nav-content .page-links,.conctact-nav{
+      display: none;
+    }
+    .nav-content::after {
+      content: "☰";
+      font-size: 24px;
+      color: black;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 50px;
+    }
 
-/* style for each image item */
-.image-item {
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    text-align: center;
-}
+    .logo{
+        margin-left: 8px;
+    }
+    
+    .collage-img {
+      margin: 10px;
+      width: 50%;
+    }
+  
+    .title {
+      font-size: 14px;
+    }
+  
+    .subtitle {
+      font-size: 12px;
+    }
+    .logo{
+      font-size: 100px;
+    }
 
-/* each image styling */
-.image-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;
-}
 
-/* image name and subtitle styling */
-.project-name, .project-subtitle {
-    display: block;
-    margin-top: 2px;
-    text-align: left;
-    font-family: 'Gothic A1', sans-serif;
-}
+    .impact-container{
+        flex-direction: column;
+        justify-content: center;
 
-/* only .project-name styling */
-.project-name {
-    font-size: 20px;
-    font-weight: regular;
-    color: rgba(0, 0, 0, 1);
-}
- 
-/* only .project-subtitle styling */
-.project-subtitle {
-    font-size: 16px;
-    font-weight: regular;
-    color: rgba(0, 0, 0, 0.8);
-}
+    }
+
+    .impact{
+        width: 100%;
+        text-align: center;
+        height: 50px;
+    }
+
+    .data {
+        height: 150px;
+        width: 100px;
+        /* background-color: aquamarine; */
+        /* margin: 10px; */
+        border-top: 1px solid black; 
+
+        justify-content: space-between;
+      }
+  
+  
+  
+    .about p{
+      font-size: 20px;
+      width: 80%;
+    }
+  
+    .contact-container{
+      margin-bottom: 0;
+    }
+  
+  
+    .footer-left p {
+      margin: 0;
+      font-size: 12px;
+      color: #555;
+      font-family: 'Lexend Exa', sans-serif;
+    
+    }
+  
+    .footer-right .contact-button {
+      font-size: 10px;
+      
+    }
+  
+  }
+  
