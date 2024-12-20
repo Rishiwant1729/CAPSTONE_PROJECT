@@ -341,7 +341,7 @@ margin-top: 10px;
     
   }
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 550px) {
     .landing-page img {
         margin-left: 20px;
     }
